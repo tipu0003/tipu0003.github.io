@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded',()=>{
 function showMore() {
     const aboutSection = document.getElementById('about');
     const skillsSection = document.getElementById('skills');
@@ -12,7 +13,7 @@ function showMore() {
         behavior: 'smooth'
     });
 }
-
+})
 
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -30,6 +31,8 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
+document.addEventListener('DOMContentLoaded',()=>{
+
 
 function showDetails(button) {
     const details = button.nextElementSibling;
@@ -41,3 +44,4 @@ function showDetails(button) {
         button.textContent = 'Show More';
     }
 }
+})
